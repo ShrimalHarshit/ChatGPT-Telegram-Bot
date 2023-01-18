@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "ENTER YOUR API KEY HERE"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "ENTER YOUR TELEGRAM TOKEN HERE"
+    tgkey = "5897738705:AAF5abToNjzL9ugBstRId71aHbGqY7kYERo"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -35,8 +35,8 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'Harshit ethic'
-username = 'harshitethic_bot'
+botname = 'ChatBot'
+username = 'chat_zeemon_bot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -66,8 +66,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'ChatBoy'
+        username = 'chat_zeemon_bot'
         update.message.reply_text('Hi')
         return 
     else:
@@ -128,8 +128,8 @@ def retry(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'ChatBot'
+        username = 'chat_zeemon_bot'
         update.message.reply_text('Send a message!')
         return 
     else:
@@ -189,8 +189,8 @@ def wait(bot, update, botname, username, new):
                 cache = None
                 qcache = None
                 user = ""
-                username = 'harshitethic_bot'
-                botname = 'Harshit Ethic'
+                username = 'chat_zeemon_bot'
+                botname = 'ChatBot'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
     else:
