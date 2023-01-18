@@ -93,16 +93,16 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'ChatBot'
+        username = 'chat_zeemon_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'ChatBot'
+        username = 'chat_zeemon_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
